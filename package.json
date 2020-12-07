@@ -47,8 +47,13 @@
   },
   "scripts": {
     "start": "node server",
+    "make-seed": "knex seed:make",
+    "run-seed": "knex seed:run",
+    "seed-heroku": "knex seed:run --env production",
     "make-migration": "knex migrate:make",
     "run-migration": "knex migrate:latest",
+    "migrate-heroku": "knex migrate:latest --env production",
+    "rollback": "knex migrate:rollback",
     "hack": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
