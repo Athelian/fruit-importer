@@ -16,10 +16,12 @@ app.use(
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, "..", "build")));
 
-app.get("/api/user-locations", async (req, res) => {
+app.get("/api/user-data", async (req, res) => {
   try {
-    const locations = await db.select("lat", "lng").table("users");
-    console.log("locations!");
+    const locations = await db
+      .select("name", "address", "lat", "lng", "choice")
+      .table("users")
+      .limit(100);
     res.json(locations);
   } catch (err) {
     console.error("Error loading locations!", err);
