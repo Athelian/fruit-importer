@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <MapContainer></MapContainer>
+        <MapContainer
+          userLocation={{ lat: 35.6812, lng: 139.7671 }}
+        ></MapContainer>
       </header>
     </div>
   );
