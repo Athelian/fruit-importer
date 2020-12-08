@@ -1,5 +1,10 @@
 # cc16-soloMVP-fruit-importer
 
+![](src/icons/crab.png)![](src/icons/dragonfruit.png)
+![](src/icons/durian.png)
+![](src/icons/jackfruit.png)
+![](src/icons/rambutan.png)
+
 Import several kilograms of fruit from a country in SE Asia, connect with friends in Tokyo who want in
 
 The MVP for this project will include a database of random users in Tokyo with three values:
