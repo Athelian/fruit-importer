@@ -10,6 +10,4 @@ const db = knex({
   searchPath: "public",
 });
 
-console.log(db.select("name").table("users"));
-
 module.exports = db;
