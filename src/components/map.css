@@ -1,4 +1,15 @@
-.poop {
-  color: red;
-  font-size: xx-large;
+.user-info {
+  color: black;
+  font-size: medium;
+  text-align: initial;
+}
+
+.crab {
+  color: yellow;
+}
+
+.gm-style-iw > button {
+  display: none; /* <-- this will generally work on the fly. */
+  visibility: hidden; /* this 2 lines below are just for hard hiding. :) */
+  opacity: 0;
 }
