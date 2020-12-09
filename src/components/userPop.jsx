@@ -1,10 +1,6 @@
 import React from "react";
-import { InfoBox } from "@react-google-maps/api";
+import "./map.css";
 
-export default function userPop(user) {
-  return (
-    <InfoBox position={{ lat: user.lat + 0.00001, lng: user.lng }}>
-      <div>HIHIHIIH</div>
-    </InfoBox>
-  );
+export default function userPop(choice) {
+  return <div className="user-group">{genUsers(user.choice)}</div>;
 }
