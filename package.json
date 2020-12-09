@@ -3,12 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
     "@react-google-maps/api": "^1.13.0",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.1.2",
-    "@testing-library/user-event": "^12.2.2",
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -20,7 +15,6 @@
     "pg": "^8.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-google-maps": "^9.4.5",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.0",
     "redux": "^4.0.5",
@@ -46,6 +40,7 @@
     "sinon": "^9.2.1"
   },
   "scripts": {
+    "go": "react-scripts build && node server",
     "start": "node server",
     "make-seed": "knex seed:make",
     "run-seed": "knex seed:run",
@@ -54,6 +49,7 @@
     "run-migration": "knex migrate:latest",
     "migrate-heroku": "knex migrate:latest --env production",
     "rollback": "knex migrate:rollback",
+    "rollback-heroku": "knex migrate:rollback --env production",
     "hack": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
