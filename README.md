@@ -1,3 +1,5 @@
+![alt text](https://media.giphy.com/media/rHCEjmgmR5mfSMWVhB/giphy.gif "Preview")
+
 This was created during my time as a student at Code Chrysalis!
 
 # Fruity
